@@ -28,5 +28,5 @@ const buyerSchema = new Schema({
     },
 },{timestamps:true});
 
-const buyerModal = db.model('buyer',buyerSchema);
+const buyerModal = mongoose.model('buyer',buyerSchema);
 module.exports = buyerModal;
