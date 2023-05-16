@@ -2,8 +2,8 @@ const { deleteToDo } = require("../controller/buyer.controller");
 const buyerModel = require("../model/buyer.model");
 
 class buyerService{
-    static async createBid(userId,location,price,quantity,description){
-            const createBuyerBid = new buyerModel({userId,location,price,quantity,description});
+    static async createBid(userId,location,price,quantity,description,category){
+            const createBuyerBid = new buyerModel({userId,location,price,quantity,description,category});
             return await createBuyerBid.save();
     }
 
