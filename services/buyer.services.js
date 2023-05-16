@@ -1,4 +1,4 @@
-const { deleteToDo } = require("../controller/buyer.controller");
+const { deletebid } = require("../controller/buyer.controller");
 const buyerModel = require("../model/buyer.model");
 
 class buyerService{

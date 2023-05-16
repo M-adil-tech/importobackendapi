@@ -5,5 +5,7 @@ router.post("/register",UserController.register);
 
 router.post("/login", UserController.login);
 
+//router.post("/kyc"),kyc
+
 
 module.exports = router;
