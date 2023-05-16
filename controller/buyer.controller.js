@@ -2,8 +2,8 @@ const buyerService = require('../services/buyer.services');
 
 exports.createBid =  async (req,res,next)=>{
     try {
-        const { userId,location,price,quantity,description} = req.body;
-        let buyerData = await buyerService.createBid(userId,location,price,quantity,description);
+        const { userId,location,price,quantity,description,category} = req.body;
+        let buyerData = await buyerService.createBid(userId,location,price,quantity,description,category);
         res.json({status: true,success:buyerData});
     } catch (error) {
         console.log(error, 'err---->');
