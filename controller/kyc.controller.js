@@ -1,20 +1,18 @@
-const Picture = require('../model/kyc.model');
+const kycModal = require('../model/kyc.model');
 
-const uploadPicture = (req, res) => {
-  // const { filename } = req.image;
-  console.log("Filename => ")
-  const picture = new Picture({
-   image:"http://localhost/uploads/"+req.body.image,
-  });
+// Handle POST request to create a new ID card entry
+const createIdCard = async (req, res) => {
+  try {
+    const { idCardNo } = req.body;
+    const imagePath = req.file.path; // Assuming you're using multer for file uploads
 
-  picture.save((err) => {
-    if (err) {
-      console.error(err);
-      res.status(500).json({ error: 'Failed to save picture' });
-    } else {
-      res.json({ success: true, message: 'Picture uploaded successfully' });
-    }
-  });
+    const newIdCard = new kycModal({ idCardNo, imagePath });
+    await newIdCard.save();
+
+    res.status(201).json(newIdCard);
+  } catch (error) {
+    res.status(500).json({ error: error.message });
+  }
 };
 
-module.exports = { uploadPicture };
+module.exports = { createIdCard };

@@ -8,3 +8,6 @@ router.post('/getbid',buyerController.getBid);
 router.post("/deletebid",buyerController.deleteBid);
 
 module.exports = router;
+
+
+

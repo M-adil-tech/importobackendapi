@@ -3,12 +3,12 @@ const UserServices = require('../services/user.services');
 exports.register = async (req, res, next) => {
     try {
         console.log("---req body---", req.body);
-        const { email, password,username } = req.body;
+        const { email, password,username,role } = req.body;
         const duplicate = await UserServices.getUserByEmail(email);
         if (duplicate) {
             throw new Error(`UserName ${email}, Already Registered`)
         }
-        const response = await UserServices.registerUser(email, password,username);
+        const response = await UserServices.registerUser(email, password,username,role);
 
         res.json({ status: true, success: 'User registered successfully' });
 
@@ -41,7 +41,7 @@ exports.login = async (req, res, next) => {
         // Creating Token
 
         let tokenData;
-        tokenData = { _id: user._id, email: user.email };
+        tokenData = { _id: user._id, email: user.email, role: user.role };
     
 
         const token = await UserServices.generateAccessToken(tokenData,"secret","1h")

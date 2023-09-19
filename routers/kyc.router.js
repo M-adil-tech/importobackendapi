@@ -1,21 +1,20 @@
 const express = require('express');
+const router = express.Router();
 const multer = require('multer');
-const pictureController = require('../controller/kyc.controller');
-const app=express()
+const kycController = require('../controller/kyc.controller');
+
+// Set up Multer for file uploads
 const storage = multer.diskStorage({
-  destination: function (req, file, cb) {
-    cb(null, 'uploads/');
+  destination: (req, file, cb) => {
+    cb(null, 'uploads/'); // Specify the folder where images will be stored
   },
-  filename: function (req, file, cb) {
+  filename: (req, file, cb) => {
     cb(null, Date.now() + '-' + file.originalname);
   },
 });
+const upload = multer({ storage });
 
-app.use("/uploads",express.static("uploads"))
-const upload = multer({ storage: storage });
-// upload.single('image'),
-const router = require("express").Router();
-
-router.post('/upload',upload.single('userImage') ,pictureController.uploadPicture);
+// Define the API routes
+router.post('/kyc', upload.single('image'), kycController.createIdCard);
 
 module.exports = router;

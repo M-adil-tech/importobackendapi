@@ -4,8 +4,10 @@ const mongoose = require('mongoose');
 const { Schema } = mongoose;
 
 const kycSchema = new Schema({
-
-      image:{
+  idCardNo:{
+    type:String
+  },
+      imagePath:{
         type:String
       },
       

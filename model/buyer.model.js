@@ -8,6 +8,9 @@ const buyerSchema = new Schema({
         type: Schema.Types.ObjectId,
         ref: UserModel.modelName
     },
+    bidId:{
+      type: Schema.Types.ObjectId,
+  },
     location: {
         type: String,
         required: true

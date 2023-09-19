@@ -23,6 +23,11 @@ const userSchema = new Schema({
         type:String,
         required: [true , "UserName can't be empty"]
 
+    },
+    role:{
+        type:String,
+        required: [true , "role can't be empty"]
+
     }
 },{timestamps:true});
 
