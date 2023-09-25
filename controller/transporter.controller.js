@@ -16,6 +16,7 @@ exports.getTransportBid =  async (req,res,next)=>{
     try {
         const { userId } = req.body;
         let transportResponseData = await transportServices.gettransportBidResponse(userId);
+        // let transport = req.body;
         res.json({status: true,success:transportResponseData});
     } catch (error) {
         console.log(error, 'err---->');
@@ -36,3 +37,7 @@ exports.deleteBidResponse =  async (req,res,next)=>{
         next(error);
     }
 }
+
+
+
+

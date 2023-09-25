@@ -1,5 +1,5 @@
 const app = require("./app");
-const db = require('./config/config')
+
 require('dotenv').config();
 const cors = require('cors');
 const mongoose = require('mongoose');

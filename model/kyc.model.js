@@ -1,4 +1,4 @@
-const db = require('../config/config');
+
 const UserModel = require("./user.modal");
 const mongoose = require('mongoose');
 const { Schema } = mongoose;
