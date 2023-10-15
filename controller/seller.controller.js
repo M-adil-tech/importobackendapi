@@ -14,7 +14,7 @@ exports.bidResponse =  async (req,res,next)=>{
 exports.getBidResponse =  async (req,res,next)=>{
     try {
         const { bidId } = req.body;
-        let sellerResponseData = await sellerServices.getQoutations(userId);
+        let sellerResponseData = await sellerServices.getQoutations(bidId);
         res.json({status: true,success:sellerResponseData});
     } catch (error) {
         console.log(error, 'err---->');
