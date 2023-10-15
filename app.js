@@ -14,7 +14,7 @@ app.use(express.json());
 app.use("/api",UserRoute);
 app.use("/api",buyerRoute);
 app.use("/api",sellerRoute);
-app.use("/api",transportRoute);
+// app.use("/api",transportRoute);
 app.use(express.json());
 app.use("/api",kycRoute);
 
