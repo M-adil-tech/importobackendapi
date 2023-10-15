@@ -12,6 +12,7 @@ const sellerSchema = new Schema({
       type: Schema.Types.ObjectId,
       ref: buyerModel.modelName
   },
+  
     location: {
         type: String,
         required: true
