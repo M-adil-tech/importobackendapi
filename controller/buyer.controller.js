@@ -21,7 +21,21 @@ exports.getBid =  async (req,res,next)=>{
         next(error);
     }
 }
+exports.getSingleBid =  async (req,res,next)=>{
+    const bidId = req.params.bidId;
 
+   
+    const singleBid = getBidById(bidId); 
+  
+  
+    if (singleBid) {
+      
+      res.json(singleBid);
+    } else {
+     
+      res.status(404).json({ error: 'Bid not found' });
+    }
+}
 exports.deleteBid =  async (req,res,next)=>{
     try {
         const { id } = req.body;
