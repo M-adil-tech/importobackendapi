@@ -2,8 +2,8 @@ const sellerServices = require('../services/seller.services');
 
 exports.bidResponse =  async (req,res,next)=>{
     try {
-        const { userId,bidId,location,Qouteprice,quantity,description,category} = req.body;
-        let sellerResponse = await buyerService.createQoutation(userId,bidId,location,Qouteprice,quantity,description,category);
+        const { bidId,location,Qouteprice,quantity,description,category} = req.body;
+        let sellerResponse = await buyerService.createQoutation(bidId,location,Qouteprice,quantity,description,category);
         res.json({status: true,success:sellerResponse});
     } catch (error) {
         console.log(error, 'err---->');
@@ -13,7 +13,7 @@ exports.bidResponse =  async (req,res,next)=>{
 
 exports.getBidResponse =  async (req,res,next)=>{
     try {
-        const { userId } = req.body;
+        const { bidId } = req.body;
         let sellerResponseData = await sellerServices.getQoutations(userId);
         res.json({status: true,success:sellerResponseData});
     } catch (error) {

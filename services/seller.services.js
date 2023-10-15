@@ -2,13 +2,13 @@ const { deletebid } = require("../controller/buyer.controller");
 const sellerModal = require("../model/Seller.model");
 
 class sellerService{
-    static async createQoutation(userId,bidId,location,Qouteprice,quantity,description,category){
-            const createQoutation = new sellerModal({userId,bidId,location,Qouteprice,quantity,description,category});
+    static async createQoutation(bidId,location,Qouteprice,quantity,description,category){
+            const createQoutation = new sellerModal({bidId,location,Qouteprice,quantity,description,category});
             return await createQoutation.save();
     }
 
-    static async getQoutations(userId){
-        const sellerBidList = await sellerModal.find({userId})
+    static async getQoutations(bidId){
+        const sellerBidList = await sellerModal.find({bidId})
         return sellerBidList;
     }
 
