@@ -4,7 +4,7 @@ const UserRoute = require("./routers/user.routes");
 const buyerRoute = require('./routers/buyer.router');
 const kycRoute=require('./routers/kyc.router');
 const sellerRoute=require('./routers/seller.router')
-const transportRoute=require('./routers/transport.router')
+// const transportRoute=require('./routers/transport.router')
 const app = express();
 const cors = require('cors');
 app.use(bodyParser.json())
