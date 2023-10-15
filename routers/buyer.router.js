@@ -5,7 +5,7 @@ router.post("/createbid",buyerController.createBid);
 
 router.post('/getbid',buyerController.getBid);
 
-router.post("/getbid:bidId",buyerController.getSingleBid);
+router.post("/getbid/:bidId",buyerController.getSingleBid);
 router.post('/deletebid',buyerController.deleteBid);
 
 
