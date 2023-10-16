@@ -22,9 +22,9 @@ exports.register = async (req, res, next) => {
 exports.login = async (req, res, next) => {
     try {
 
-        const { email, password,role } = req.body;
+        const { email, password} = req.body;
 
-        if (!email || !password  || !role) {
+        if (!email || !password ) {
             throw new Error('Parameter are not correct');
         }
         let user = await UserServices.checkUser(email);
