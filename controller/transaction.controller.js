@@ -6,12 +6,12 @@ exports.createpayment = async(req,res)=>{
     const { amount, quantity,buyername ,status} = req.body;
 
     try {
-        const paymentIntent = await stripe.paymentIntents.create({
-          amount: amount,
-          currency: 'usd', 
-          description: `Payment for ${quantity} items`,
+        // const paymentIntent = await stripe.paymentIntents.create({
+        //   amount: amount,
+        //   currency: 'usd', 
+        //   description: `Payment for ${quantity} items`,
 
-        });
+        // });
         const transaction = new Transaction({
             amount: amount,
             quantity: quantity,
@@ -22,7 +22,8 @@ exports.createpayment = async(req,res)=>{
           await transaction.save();
     
         res.json({
-          clientSecret: paymentIntent.client_secret,
+            status: true,
+            message:'payment sucessfull'
         });
       } catch (err) {
         res.status(500).json({ error: err.message });
