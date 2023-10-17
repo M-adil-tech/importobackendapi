@@ -56,6 +56,16 @@ class UserServices{
             throw error;
         }
     }
+    static async updateUserById(userId, updatedUserData) {
+        try {
+            const user = await UserModel.findByIdAndUpdate(userId, updatedUserData, {
+                new: true, // Return the modified document rather than the original
+            });
+            return user;
+        } catch (error) {
+            throw error;
+        }
+    }
 
     static async generateAccessToken(tokenData,JWTSecret_Key,JWT_EXPIRE){
         return jwt.sign(tokenData, JWTSecret_Key, { expiresIn: JWT_EXPIRE });
