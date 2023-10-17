@@ -6,7 +6,9 @@ exports.bidResponse =  async (req,res,next)=>{
         // if (!bidId || !mongoose.Types.ObjectId.isValid(bidId)) {
         //     return res.status(400).json({ status: false, message: 'Invalid bidId' });
         // }
+        
         await buyerModel.findByIdAndUpdate(bidId, { status: 'processing' });
+        console.log(bidId);
         // const bid = await buyerModel.findById(bidId);
         // console.log(bid);
         // if (!bid ) {

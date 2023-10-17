@@ -4,11 +4,17 @@ const UserRoute = require("./routers/user.routes");
 const buyerRoute = require('./routers/buyer.router');
 const kycRoute=require('./routers/kyc.router');
 const sellerRoute=require('./routers/seller.router')
+const cors = require('cors');
 // const transportRoute=require('./routers/transport.router')
 const app = express();
-const cors = require('cors');
-app.use(bodyParser.json())
-app.use(cors());
+
+app.use(bodyParser.json());
+const corsOptions = {
+    origin: 'http://localhost:3000',
+    methods: 'GET,PUT,POST,DELETE',
+    optionsSuccessStatus: 204, // Set the preflight response status to 204
+  };
+  app.use(cors(corsOptions));
 app.use("/uploads",express.static("uploads"))
 app.use(express.json());
 app.use("/api",UserRoute);
