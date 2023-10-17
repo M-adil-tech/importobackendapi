@@ -1,8 +1,10 @@
 const sellerServices = require('../services/seller.services');
-
+const buyerModel = require("../model/buyer.model");
 exports.bidResponse =  async (req,res,next)=>{
     try {
         const { bidId,location,Qouteprice,quantity,description,category} = req.body;
+        await buyerModel.findByIdAndUpdate(bidId, { status: 'processing' });
+
         let sellerResponse = await sellerServices.createQoutation(bidId,location,Qouteprice,quantity,description,category);
         res.json({status: true,success:sellerResponse});
     } catch (error) {

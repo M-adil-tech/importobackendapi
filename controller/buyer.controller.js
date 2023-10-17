@@ -46,3 +46,18 @@ exports.deleteBid =  async (req,res,next)=>{
         next(error);
     }
 }
+exports.acceptBidResponse = async (req, res, next) => {
+    try {
+        const { bidId } = req.body;
+        // Assuming you have validation logic for bidId and bid response acceptance
+        // ...
+
+        // Update the bid status to 'completed'
+        await buyerModel.findByIdAndUpdate(bidId, { status: 'completed' });
+
+        res.json({ status: true, message: 'Bid response accepted successfully.' });
+    } catch (error) {
+        console.log(error, 'err---->');
+        next(error);
+    }
+};
