@@ -3,6 +3,9 @@ const buyerModel = require("../model/buyer.model");
 exports.bidResponse =  async (req,res,next)=>{
     try {
         const { bidId,location,Qouteprice,quantity,description,category} = req.body;
+        if (!bidId || !mongoose.Types.ObjectId.isValid(bidId)) {
+            return res.status(400).json({ status: false, message: 'Invalid bidId' });
+        }
         await buyerModel.findByIdAndUpdate(bidId, { status: 'processing' });
         // const bid = await buyerModel.findById(bidId);
         // console.log(bid);
