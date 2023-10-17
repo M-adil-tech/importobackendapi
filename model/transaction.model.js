@@ -4,16 +4,21 @@ const { Schema } = mongoose;
 
 const transactionSchema = new Schema({
  
-  product: {
-    type: mongoose.Schema.Types.ObjectId,
-    ref: 'Product', 
-    required: true,
-  },
   
   amount: {
     type: Number,
     required: true,
   },
+  quantity: {
+    type: Number,
+    required: true,
+  },
+  
+  buyername: {
+    type: String,
+    required: true,
+  },
+  
   
   status: {
     type: String,
