@@ -4,7 +4,7 @@ exports.bidResponse =  async (req,res,next)=>{
     try {
         const { bidId,location,Qouteprice,quantity,description,category} = req.body;
         const bid = await buyerModel.findById(bidId);
-        if (!bid || bid.status !== 'active') {
+        if (!bid ) {
             return res.status(404).json({ status: false, message: 'Invalid  bid ID' });
         }
         bid.status = 'processing';

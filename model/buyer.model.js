@@ -6,7 +6,8 @@ const { Schema } = mongoose;
 const buyerSchema = new Schema({
     userId:{
         type: Schema.Types.ObjectId,
-        ref: UserModel.modelName
+        ref: UserModel.modelName,
+        
     },
    
     location: {
