@@ -46,6 +46,20 @@ exports.deleteBid =  async (req,res,next)=>{
         next(error);
     }
 }
+exports.getBidById = async (req, res, next) => {
+    try {
+        const { bidId } = req.params;
+        const bid = await buyerModel.findById(bidId);
+        if (bid) {
+            res.json({ status: true, success: bid });
+        } else {
+            res.status(404).json({ status: false, message: 'Bid not found' });
+        }
+    } catch (error) {
+        console.log(error, 'err---->');
+        next(error);
+    }
+};
 exports.acceptBidResponse = async (req, res, next) => {
     try {
         const { bidId } = req.body;
