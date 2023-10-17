@@ -59,7 +59,7 @@ class UserServices{
     static async updateUserById(userId, updatedUserData) {
         try {
             const user = await UserModel.findByIdAndUpdate(userId, updatedUserData, {
-                new: true, // Return the modified document rather than the original
+                new: true, 
             });
             return user;
         } catch (error) {
