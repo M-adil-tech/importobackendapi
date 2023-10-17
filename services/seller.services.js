@@ -2,8 +2,8 @@ const { deletebid } = require("../controller/buyer.controller");
 const sellerModal = require("../model/Seller.model");
 
 class sellerService{
-    static async createQoutation(bidId,location,Qouteprice,quantity,description,category){
-            const createQoutation = new sellerModal({bidId,location,Qouteprice,quantity,description,category});
+    static async createQoutation(bidId,location,Qouteprice,quantity,description,category,status){
+            const createQoutation = new sellerModal({bidId,location,Qouteprice,quantity,description,category , status:'processing'});
             return await createQoutation.save();
     }
 
