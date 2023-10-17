@@ -4,9 +4,11 @@ const mongoose = require('mongoose');
 const { Schema } = mongoose;
 
 const buyerSchema = new Schema({
-    bidId:{
-      type: Schema.Types.ObjectId,
-  },
+    userId:{
+        type: Schema.Types.ObjectId,
+        ref: UserModel.modelName
+    },
+   
     location: {
         type: String,
         required: true
