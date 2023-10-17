@@ -6,7 +6,7 @@ const { Schema } = mongoose;
 const buyerSchema = new Schema({
     userId:{
         type: Schema.Types.ObjectId,
-        ref: UserModel.modelName,
+        ref: UserModel,
         
     },
    
@@ -15,7 +15,7 @@ const buyerSchema = new Schema({
         required: true
       },
       category:{
-        
+
         type: String,
         required: true
       },

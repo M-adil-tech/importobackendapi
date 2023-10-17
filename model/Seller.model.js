@@ -7,7 +7,7 @@ const sellerSchema = new Schema({
 
     bidId:{
       type: Schema.Types.ObjectId,
-      ref: buyerModel.modelName
+      ref: buyerModel
   },
   
     location: {
