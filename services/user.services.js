@@ -12,6 +12,7 @@ class UserServices{
         }catch(err){
             throw err;
         }
+
     }
 
     static async getUserByEmail(email){
@@ -25,6 +26,21 @@ class UserServices{
     static async checkUser(email){
         try {
             return await UserModel.findOne({email});
+        } catch (error) {
+            throw error;
+        }
+    }
+    static async getAllUsers() {
+        try {
+            return await UserModel.find({});
+        } catch (error) {
+            throw error;
+        }
+    }
+
+    static async getUserById(userId) {
+        try {
+            return await UserModel.findById(userId);
         } catch (error) {
             throw error;
         }
