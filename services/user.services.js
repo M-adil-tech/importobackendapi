@@ -45,6 +45,17 @@ class UserServices{
             throw error;
         }
     }
+    static async getUserRoleById(userId) {
+        try {
+            const user = await UserModel.findById(userId);
+            if (!user) {
+                throw new Error('User not found');
+            }
+            return user.role;
+        } catch (error) {
+            throw error;
+        }
+    }
 
     static async generateAccessToken(tokenData,JWTSecret_Key,JWT_EXPIRE){
         return jwt.sign(tokenData, JWTSecret_Key, { expiresIn: JWT_EXPIRE });

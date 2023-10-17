@@ -62,7 +62,7 @@ exports.getAllUsers = async (req, res, next) => {
 };
 exports.getUserById = async (req, res, next) => {
     try {
-        const userId = req.params.userId; // Assuming the user ID is passed as a route parameter
+        const userId = req.params.userId; 
         const user = await UserServices.getUserById(userId);
         if (!user) {
             throw new Error('User not found');
@@ -72,3 +72,13 @@ exports.getUserById = async (req, res, next) => {
         next(error);
     }
 };
+exports.getUserRole = async (req, res, next) => {
+    try {
+        const userId = req.params.userId; 
+        const role = await UserServices.getUserRoleById(userId);
+        res.status(200).json({ status: true, role });
+    } catch (error) {
+        next(error);
+    }
+};
+
