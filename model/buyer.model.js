@@ -15,6 +15,7 @@ const buyerSchema = new Schema({
         required: true
       },
       category:{
+        
         type: String,
         required: true
       },
