@@ -33,6 +33,12 @@ const buyerSchema = new Schema({
         type: String,
         required: true
     },
+    status: {
+      type: String,
+      enum: ['active', 'processing', 'completed'],
+      default: 'active',
+      required: true,
+    },
 },{timestamps:true});
 
 const buyerModal = mongoose.model('buyer',buyerSchema);
