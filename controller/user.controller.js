@@ -81,4 +81,14 @@ exports.getUserRole = async (req, res, next) => {
         next(error);
     }
 };
+exports.updateUserById = async (req, res, next) => {
+    try {
+        const userId = req.params.userId; // Assuming the user ID is passed as a route parameter
+        const updatedUserData = req.body; // Assuming updated user data is sent in the request body
+        const updatedUser = await UserServices.updateUserById(userId, updatedUserData);
+        res.status(200).json({ status: true, user: updatedUser });
+    } catch (error) {
+        next(error);
+    }
+};
 
