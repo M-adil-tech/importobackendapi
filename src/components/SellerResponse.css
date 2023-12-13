@@ -1,0 +1,128 @@
+.sellerresponse {
+    margin: 0 auto;
+    padding: 0;
+    display: flex;
+  }
+
+.sellerresponse .outerdash {
+    background-color: #133554;
+    width: 251px;
+    min-height:800px;
+    border: 1px solid #133554;
+    box-shadow: 7px 0 7px #587fa4;
+}
+
+.sellerresponse .outerdash  .dashboard {
+    margin-top: 50px;
+    background-color: #133554;
+    padding: 20px;
+    border: 1px solid #133554;
+    /* border-radius: 5px; */
+    width: 250px;
+    min-height:800px;
+}
+
+
+
+.sellerresponse .outerdash  .dashboard .option {
+    margin: 0 auto;
+    /* padding: 10px; */
+    /* border: 1px solid #133554; */
+    background-color: #133554;
+    /* border-radius: 5px; */
+    text-align: center;
+    cursor: pointer;
+}
+
+.sellerresponse .outerdash  .dashboard .option a button{
+    background-color:#133554;
+    color:white;
+    border: 1px solid  #133554;
+    /* border-radius: 20px; */
+    width: 100%;
+    padding:8px ;
+    margin: 1px;
+}
+
+.sellerresponse .outerdash  .dashboard .option a button:hover{
+    background-color:white;
+    color: #133554;
+    transition: ease-in-out .2s;
+}
+
+
+
+.sellerresponse .bidcreation {
+    margin: 0 auto;
+    padding: 0;
+    width: 80%;
+  }
+
+  .sellerresponse .bidcreation .heading{
+    padding: 50px;
+    margin-top: 1%;
+    text-align: center;
+    font-family: 'Mirza', serif;
+  }
+  
+ 
+  .sellerresponse .bidcreation .bidForm {
+    max-width: 600px;
+    margin: 0 auto;
+    border: 1px solid #ccc;
+    padding: 50px;
+    margin-top: 1%;
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    box-shadow: 7px 7px 7px;
+    margin-bottom: 3%;
+  }
+  
+  
+  .sellerresponse .bidcreation .bidForm .bidreq {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .sellerresponse .bidcreation .bidForm .bidreq input[type="date"]{
+    padding: 10px 20px;
+    border-radius: 10px;
+    color: #0c2943;
+
+  }
+ 
+  
+  .sellerresponse .bidcreation .bidForm .bidreq input[type="text"],
+  input[type="number"],
+  select,
+  textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    font-size: 16px;
+  }
+  
+  .sellerresponse .bidcreation .bidForm .bidreq select {
+    height: 40px;
+  }
+  
+ 
+  .sellerresponse .bidcreation .bidForm .bidreq input[type="submit"] {
+    width: 50%;
+    margin: 0 auto;
+    background-color: #0c2943;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+
+  .sellerresponse .bidcreation .bidForm .bidreq input[type="submit"]:hover {
+    background-color: white;
+    color: #0c2943;
+  }

@@ -1,0 +1,101 @@
+  @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+body{
+    margin: 0;
+    padding: 0;
+    /* font-family: 'Roboto', sans-serif; */
+    background-color: #f1f1f1;
+
+}
+
+.main{
+    /* border: 1px solid rgb(183, 177, 177); */
+    border-radius: 10px;
+    background-color: #d1bdbd;
+    max-width: 1100px;
+    padding: 10px;
+    margin: 0 auto;
+    display: flex;
+    margin-top: 80px ;
+    gap:32px;
+    margin-bottom: 5%;
+}
+
+.main .mainimg {
+    width:49%;
+}
+
+.main .mainimg .sideimg img{
+    width: 100%;
+    object-fit: cover;
+    border-radius: 8px ;
+    height: 550px;
+    border-radius: 10px ;
+
+}
+
+.maindiv{
+    /* border: 1px solid rgb(183, 177, 177); */
+    width: 49%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px ;
+}
+
+.maindiv a button{
+    width: 50%;
+    margin: 0 auto;
+    background-color: #0c2943;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+.maindiv a button:hover {
+    background-color: white;
+    color: #0c2943;
+}
+
+.maindiv .mainform{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+}
+
+/* .maindiv .mainform .feilds{
+
+
+} */
+
+.maindiv .mainform .feilds input{
+    padding: 10px 20px;
+    border-radius: 10px;
+    color: #0c2943;
+    width: 300px;
+}
+
+.maindiv .mainform .feilds label{
+    margin-right: 15px;
+    color: #0c2943;
+}
+
+.maindiv .mainform .feilds button{
+    width: 50%;
+    margin: 0 auto;
+    background-color: #0c2943;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.maindiv .mainform .feilds button:hover{
+    background-color: white;
+    color: #0c2943;
+}

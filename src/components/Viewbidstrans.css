@@ -1,0 +1,123 @@
+
+
+body{
+    padding: 0;
+    margin: 0 auto;
+    text-align: center;
+
+}
+
+.flexing-v-t{
+    display: flex;
+    gap: 5%;
+
+}
+
+
+.viewbidstrans{
+    width: 70%;
+    text-align: center;
+    margin-top: 10%;
+}
+
+.viewbidstrans .desc{
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    border: 1px solid black;
+    width: 350px;
+    margin: 0 auto;
+    margin-top: 30px;
+    border-radius: 30px;
+    padding: 30px;
+    background-color: #0c2943;
+    color: white;
+}
+
+.viewbidstrans .yourbid{
+    display: flex;
+    justify-content: center;
+    /* border: 1px solid black; */
+    flex-direction: column;
+    gap: 10px;
+    width: 202px;
+    margin: 0 auto;
+    margin-top: 70px;
+}
+
+.viewbidstrans .yourbid input{
+    border-radius:20px;
+    padding: 5px 10px ;
+    border-color:#0c2943 ;
+}
+
+.viewbidstrans .yourbid button{
+    margin: 0 auto;
+    border-radius:20px;
+    width: 100px;
+    background-color: #0c2943;
+    color: white;
+    padding: 5px;
+    border-color:#0c2943 ;
+}
+
+.viewbidstrans .yourbid button:hover{
+    background-color: white;
+    color: #0c2943;
+}
+
+.viewbidstrans .tablediv{
+    margin-top: 5%;
+}
+
+.viewbidstrans .tablediv table {
+    border-collapse: collapse;
+    width: 80%;
+    margin: 20px auto;
+}
+
+.viewbidstrans .tablediv table th, td {
+    border: 1px solid #ccc;
+    padding: 8px;
+    text-align: left;
+}
+
+.viewbidstrans .tablediv table th {
+    background-color: #0c2943;
+    color: white;
+}
+
+.viewbidstrans .tablediv table td {
+    background-color: rgb(206, 202, 202);
+    color: #0c2943;
+    border: 1px solid #ccc;
+    padding: 8px;
+    text-align: left;
+}
+
+.viewbidstrans .tablediv table td .editbuton{
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+    gap: 5px;
+}
+
+.viewbidstrans .tablediv table td .editbuton a{
+    margin: 0 auto; 
+}
+
+.viewbidstrans .tablediv table td .editbuton button{
+    background-color: #0c2943;
+    color: white;
+    border: 1px solid #ccc;
+    border-radius: 30px;
+    padding: 8px;
+    width: 100px;
+     margin: 0 auto; 
+}
+
+.viewbidstrans .tablediv table td .editbuton button:hover{
+    background-color: white;
+    color: #0c2943;
+}
+

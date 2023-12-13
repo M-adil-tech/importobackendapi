@@ -1,0 +1,86 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu&display=swap");
+ 
+body{
+  background-color: #f1f1f1;
+}
+
+.homecontainer {
+  margin-top: 5%;
+  margin-bottom: 5%;
+  display: flex;
+}
+
+.homecontainer .flexdiv {
+  color:#0c2943;
+  font-family: "Ubuntu", sans-serif;
+  display: flex;
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: px;
+  /* border: 2px solid rgb(27, 2, 2); */
+  padding: 2px;
+  justify-content: space-between;
+}
+
+.homecontainer .flexdiv .imgdiv {
+  width: 50%;
+  /* border: 2px solid rgb(234, 7, 7); */
+}
+
+.homecontainer .flexdiv .imgdiv .sideimg img {
+  width: 90%;
+  height: 500px;
+  border-radius: 20px;
+  object-fit: cover;
+}
+
+.homecontainer .flexdiv .outerdiv {
+  /* border: 2px solid rgb(229, 18, 18); */
+  max-width: 50%;
+}
+
+.homecontainer .flexdiv .outerdiv .upperdiv .heading{
+  margin-top: 30px;
+  font-size: 30px;
+
+}
+
+.homecontainer .flexdiv .outerdiv .upperdiv .heading 
+
+.homecontainer .flexdiv .outerdiv .upperdiv .ul {
+  margin-top: 20px;
+}
+
+.homecontainer .flexdiv .outerdiv .upperdiv .lowerdiv {
+  margin-top: 100px;
+}
+
+.homecontainer .flexdiv .outerdiv .upperdiv .lowerdiv .trustimg{
+  max-width: 70px;
+  margin-left: 10px;
+  margin-top: 30px;
+}
+
+.homecontainer .flexdiv .outerdiv .upperdiv .lowerdiv .trustimg .logos img{
+  width: 100%;
+}
+
+.homecontainer .flexdiv .outerdiv .upperdiv .signup{
+  margin-top: 50px;
+}
+
+.homecontainer .flexdiv .outerdiv .upperdiv .signup button{
+  background-color:#0c2943;
+    color:white;
+    /* border: 1px solid  grey; */
+    border-radius: 30px;
+    width: 50%;
+    padding:10px ;
+}
+
+.homecontainer .flexdiv .outerdiv .upperdiv .signup button:hover{
+  background-color:white;
+  color:#0c2943;
+  transition: ease-in-out .2s;
+
+}

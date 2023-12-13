@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue&display=swap');
+
+body{
+  font-family: 'Comic Neue', cursive;
+  font-weight: 900;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #0c2943;
+    color: #000000;
+    padding: 10px 20px;
+}
+
+.imgbox{
+    width: 70px ;
+    margin-left: 50px;
+}
+
+/* Logo styles */
+ .imgbox .logo img {
+    width: 100%;
+    border-radius: 15px 15px;
+}
+
+/* Navigation links styles */
+.nav-links {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    margin-right: 50px;
+}
+
+.nav-links li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}

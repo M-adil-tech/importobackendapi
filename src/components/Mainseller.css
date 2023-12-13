@@ -1,0 +1,144 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+
+.flexing-main-s{
+    display: flex;
+    gap: 5%;
+
+}
+
+.viewsellerprofile{
+   width: 70%;
+}
+
+.viewsellerprofile header {
+    background-color:  #0c2943;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.viewsellerprofile header .seller-info{
+    display: flex;
+    text-align: left;
+    border-top: 2px solid #5a679f;
+    padding: 10px;
+}
+
+.viewsellerprofile header .seller-info .imgdiv{
+    margin-top: 30px;
+    background-color: white;
+    border-radius: 50%;
+    padding: 10px;
+    padding-bottom: 0;
+
+}
+
+
+.viewsellerprofile header .seller-info img {
+    width: 100px;
+    border-radius: 50px;
+    height: 100px;
+    object-fit: cover;
+}
+
+.viewsellerprofile header .seller-info .namediv{
+    margin-top: 50px;
+}
+
+.viewsellerprofile header .seller-info h6 {
+    margin-top: 10px;
+    margin-left: 30px;
+}
+
+.viewsellerprofile main {
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 5%;
+    width: 1300px;
+    /* border: 2px solid black; */
+    padding: 10px;
+}
+
+.viewsellerprofile main .tablebox{
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    gap: 100px;
+}
+
+.viewsellerprofile main .tablebox .product-list {
+    /* border: 2px solid black; */
+    width: 50%;
+    padding: 10px;
+}
+
+
+.viewsellerprofile main .tablebox .product-list h2 {
+    font-family: 'Mirza', serif;
+}
+
+.viewsellerprofile main .tablebox .product-list table {
+    margin: 0 auto;
+    margin-top: 50px;
+    width: 100%;
+    
+}
+
+.viewsellerprofile main .tablebox .product-list table th {
+    background-color: #0c2943;
+    color: white;
+    border: 1px solid #ccc;
+    padding: 8px;
+    text-align: center;
+}
+
+.viewsellerprofile main .tablebox .product-list table td{
+    background-color: rgb(206, 202, 202);
+    color: #0c2943;
+    border: 1px solid #ccc;
+    padding: 8px;
+    text-align: center;
+}
+
+
+
+
+/* Seller stats */
+.viewsellerprofile main .tablebox .seller-stats {
+    /* border: 2px solid black; */
+    width: 50%;
+    padding: 10px;
+}
+
+
+.viewsellerprofile main .tablebox .seller-stats h2 {
+    font-family: 'Mirza', serif;
+}
+
+.viewsellerprofile main .tablebox .seller-stats table{
+    margin: 0 auto;
+    margin-top: 50px;
+    width: 100%;
+}
+
+.viewsellerprofile main .tablebox .seller-stats table th{
+    background-color: #0c2943;
+    color: white;
+    border: 1px solid #ccc;
+    padding: 8px;
+    text-align: center;
+}
+
+.viewsellerprofile main .tablebox .seller-stats table td{
+    background-color: rgb(206, 202, 202);
+    color: #0c2943;
+    border: 1px solid #ccc;
+    padding: 8px;
+    text-align: center;
+}
+
+

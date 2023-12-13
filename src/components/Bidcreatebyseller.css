@@ -1,0 +1,73 @@
+
+.flexing-create-s{
+  display: flex;
+
+}
+
+.flexing-create-s .bidcreations {
+    margin: 0 auto;
+    padding: 0;
+    width: 70%;
+  }
+
+  .flexing-create-s .bidcreations .heading{
+    padding: 50px;
+    margin-top: 2%;
+    text-align: center;
+  }
+  
+  /* Style the form */
+  .flexing-create-s .bidcreations .bidForm {
+    max-width: 600px;
+    margin: 0 auto;
+    border: 1px solid #ccc;
+    padding: 50px;
+    margin-top: 2%;
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    box-shadow: 7px 7px 7px;
+    margin-bottom: 3%;
+  }
+  
+  /* Style individual form elements */
+  .flexing-create-s .bidcreations .bidForm .bidreq {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+ 
+  
+  .flexing-create-s .bidcreations .bidForm .bidreq input[type="text"],
+  input[type="number"],
+  select,
+  textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    font-size: 16px;
+  }
+  
+  .flexing-create-s .bidcreations .bidForm .bidreq select {
+    height: 40px;
+  }
+  
+  /* Style the submit button */
+  .flexing-create-s .bidcreations .bidForm .bidreq input[type="submit"] {
+    background-color: #0c2943;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 30px;
+    font-size: 16px;
+    cursor: pointer;
+    width: 30%;
+    margin: 0 auto;
+  }
+  
+  /* Style the submit button on hover */
+  .flexing-create-s .bidcreations .bidForm .bidreq input[type="submit"]:hover {
+    background-color: white;
+    color:#0c2943;
+  }

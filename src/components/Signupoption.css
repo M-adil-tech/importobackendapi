@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Mirza:wght@700&display=swap');
+
+/* body{
+    font-family: 'Comic Neue', cursive;
+    font-weight: 900;
+}  */
+
+.mainoption{
+    margin: 0 auto;
+    margin-bottom: 5%;
+}
+
+.mainoption .outerdiv{
+    max-width: 1300px;
+    margin: 0 auto;
+    margin-top: 5%;
+
+} 
+
+.mainoption .outerdiv .signupheading{
+    margin-bottom: 30px;
+    font-family: 'Mirza', serif;
+}
+
+.mainoption .outerdiv .signuplist{
+    margin:0 auto;
+    border:  1px solid rgb(220, 215, 215);
+    border-radius: 30px;
+    padding: 60px;
+    max-width: 850px;
+    height: auto;
+    display:flex;
+    gap: 10px;
+    justify-content: space-evenly;
+    
+}
+
+.mainoption .outerdiv .signuplist .opt{
+    margin: 0 auto;
+    border: 1px solid rgb(220, 215, 215);
+    border-radius: 25px;
+    padding: 10px;
+    width:200px;
+    height: auto;
+}
+
+.mainoption .outerdiv .signuplist .opt .iconbox{
+    max-width: 40px ;
+}
+
+.mainoption .outerdiv .signuplist .opt .iconbox .logo img{
+    width: 100%;
+    border-radius: 20px 20px 20px 20px;;
+}
+
+.mainoption .outerdiv .signuplist .opt .inopt{
+    /* margin: 0 auto; */
+    gap:10px;
+    margin-bottom: 30px;
+    color: #0c2943;
+}
+
+.mainoption .outerdiv .signuplist .opt .inopt a button{
+    background-color:#0c2943;
+    color:white;
+    border: 1px solid  grey;
+    border-radius: 25px;
+    width: 100px;
+    padding:8px ;
+}
+
+.mainoption .outerdiv .signuplist .opt .inopt a button:hover{
+    background-color:white;
+    color:#0c2943;
+    transition: ease-in-out .2s;
+}

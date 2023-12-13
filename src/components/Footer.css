@@ -1,0 +1,193 @@
+footer {
+    background: #0c2943;
+    margin-top: px;
+  }
+
+  footer .footer-sec {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    justify-content: space-around;
+  }
+  
+  footer .footer-sec .left-icon-details .rightlook-logo{
+    width: 100%;
+    text-align: center;
+  }
+  footer .footer-sec .left-icon-details .rightlook-logo img{
+    width: 40%;
+    border-radius: 50px;
+  }
+  footer .footer-sec .left-icon-details p {
+    font-family: "DM Sans";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    color: #EAEAEA;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    margin-top: 20px;
+  }
+
+  footer .footer-sec .left-icon-details .social-link {
+    padding: 0;
+    list-style: none;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+  }
+
+  footer .footer-sec .left-icon-details .social-link li {
+    margin-right: 10px;
+  }
+
+  footer .footer-sec .left-icon-details .social-link li img {
+    width:50px;
+    height: 50px;
+    -o-object-fit: cover;
+       object-fit: cover;
+       background: thistle;
+       border-radius: 31px;
+  }
+
+  footer .footer-sec .mid-product-list {
+    margin-top: 70px;
+  }
+
+  footer .footer-sec .mid-product-list .productlist {
+    padding: 0;
+    list-style: none;
+  }
+
+  footer .footer-sec .mid-product-list .productlist h3 {
+    font-family: "Domine";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 24px;
+    color: #FFFFFF;
+    text-transform: capitalize;
+    margin-bottom: 30px;
+  }
+  footer .footer-sec .mid-product-list .productlist li {
+    margin-top: 10px;
+  }
+
+  footer .footer-sec .mid-product-list .productlist li a {
+    text-decoration: none;
+    font-family: "DM Sans";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 16px;
+    color: #FFFFFF;
+    text-transform: capitalize;
+  }
+
+  footer .footer-sec .quick-link-list {
+    display: flex;
+    justify-content: center;
+  }
+
+  footer .footer-sec hr {
+    color: white;
+    margin: 0;
+  }
+
+  footer .footer-sec .copyright p {
+    font-family: "Domine";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    color: #EAEAEA;
+    padding: 20px;
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+
+  footer .footer-sec .left-icon-details p {
+    
+    text-align: center;
+  }
+  
+  @media only screen and (max-width: 1250px) {
+    footer .footer-sec .left-icon-details p {
+      font-size: 14px;
+      line-height: 20px;
+      width: 74%;
+    }
+    footer .footer-sec .mid-product-list .productlist li a {
+      font-size: 14px;
+    }
+    footer .footer-sec .mid-product-list .productlist li {
+      margin-top: 6px;
+    }
+  }
+  
+  @media only screen and (max-width: 768px) {
+    footer .footer-sec .left-icon-details p {
+      width: 86%;
+      font-size: 12px;
+      line-height: 16px;
+    }
+    .mid-product-list {
+      display: flex;
+      justify-content: center;
+    }
+    footer .footer-sec .mid-product-list .productlist li a {
+      font-size: 11px;
+    }
+    footer .footer-sec {
+      padding: 20px 10px;
+    }
+    footer .footer-sec .mid-product-list .productlist h3 {
+      font-size: 18px;
+      line-height: 16px;
+      margin-bottom: 10px;
+    }
+    .left-icon-details {
+      display: flex;
+      flex-direction: column;
+    }
+    footer .footer-sec .copyright p {
+      font-size: 16px;
+      line-height: 24px;
+      padding: 10px;
+      padding-bottom: 0;
+    }
+    footer .footer-sec .mid-product-list {
+      margin-top: 40px;
+    }
+  }
+  @media only screen and (max-width: 600px) {
+    footer .footer-sec .left-icon-details p {
+      width: 100%;
+      font-size: 18px;
+      line-height: 24px;
+    }
+    .mid-product-list {
+      width: 45%;
+    }
+    footer .footer-sec .mid-product-list .productlist h3 {
+      font-size: 24px;
+      line-height: 24px;
+    }
+    footer .footer-sec .mid-product-list .productlist li a {
+      font-size: 16px;
+      line-height: 16px;
+      font-weight: 400;
+    }
+    footer .footer-sec .mid-product-list .productlist li {
+      margin-top: 2px;
+    }
+    footer .footer-sec {
+      padding: 80px 0 20px 0;
+    }
+
+}

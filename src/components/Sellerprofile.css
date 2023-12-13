@@ -1,0 +1,103 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+
+.flexing-s-p{
+    display: flex;
+    gap: 5%;
+
+}
+
+.sellerprofile {
+    width: 70%;
+}
+
+.sellerprofile header {
+    background-color:  #0c2943;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.sellerprofile header .seller-info{
+    text-align: left;
+    border-top: 2px solid #5a679f;
+    padding: 10px;
+}
+
+.sellerprofile header .seller-info img {
+    max-width: 100px;
+    border-radius: 50%;
+    margin-left: 80px;
+}
+
+.sellerprofile header .seller-info h6 {
+    margin-top: 10px;
+    margin-left: 80px;
+}
+
+.sellerprofile header .seller-info h6 input{
+    background-color:  #0c2943;
+    color: white;
+}
+
+.sellerprofile main {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.sellerprofile main .product-list {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.sellerprofile main .product-list h2 {
+    font-size: 20px;
+}
+
+.sellerprofile main .product-list form {
+    margin-top: 10px;
+}
+
+.sellerprofile main .product-list label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.sellerprofile main .product-list input[type="text"] {
+    width: 80%;
+    padding: 5px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+/* Seller stats */
+.sellerprofile main .seller-stats {
+    flex: 1;
+}
+
+.sellerprofile main .seller-stats h2 {
+    font-size: 20px;
+}
+
+.sellerprofile main .seller-stats form {
+    margin-top: 10px;
+}
+
+.sellerprofile main .seller-stats label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.sellerprofile main .seller-stats input[type="text"] {
+    width: 30%;
+    padding: 5px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    background-color: #f9f9f9;
+}

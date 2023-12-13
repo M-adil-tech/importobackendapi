@@ -1,0 +1,73 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+
+.flexing-b-p
+{
+    display: flex;
+}
+  
+.buyerpayment
+{
+    width: 45%;
+    margin: 20px auto;
+    margin-top: 130px;
+  }
+  
+  .buyerpayment form {
+    padding: 10px;
+    background-color: rgb(229, 229, 229);
+    border-radius: 10px;
+    border: 2px solid #bebebe;
+    box-shadow: 2px 5px 15px 3px;
+  }
+
+  .buyerpayment form .name
+  {
+    display: flex;
+    gap: 20px;
+    text-align: center;
+    padding: 0px 35px;
+  }
+
+  
+  .buyerpayment form input
+   {
+    padding: 8px;
+    margin-bottom: 30px;
+    width: 90%;
+    border-radius: 8px;
+    border-color: rgb(199, 199, 199);
+    border-top: none;
+    border-left: none;
+  }
+
+  .buyerpayment form .amount
+  {
+    margin-top: 20px;
+  }
+  
+  .buyerpayment form button {
+    background-color: #0c2943;
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 8px;
+    margin-bottom: 10px;
+    width: 90%;
+    border-radius: 8px;
+  }
+  
+.buyerpayment form button:hover {
+    background-color: #ffffff;
+    color: #0c2943;
+    padding: 8px;
+    margin-bottom: 10px;
+  }
+  
+#payment-status {
+    font-weight: bold;
+    margin-top: 20px;
+  }

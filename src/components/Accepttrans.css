@@ -1,0 +1,36 @@
+.accepttrans{
+    text-align: center;
+}
+
+.accepttrans .heading{
+    margin-top: 5%;
+}
+
+.accepttrans .tablediv{
+    margin-top: 5%;
+}
+
+.accepttrans .tablediv table {
+    border-collapse: collapse;
+    width: 80%;
+    margin: 20px auto;
+}
+
+.accepttrans .tablediv table th, td {
+    border: 1px solid #ccc;
+    padding: 8px;
+    text-align: left;
+}
+
+.accepttrans .tablediv table th {
+    background-color: #0c2943;
+    color: white;
+}
+
+.accepttrans .tablediv table td {
+    background-color: rgb(206, 202, 202);
+    color: #0c2943;
+    border: 1px solid #ccc;
+    padding: 8px;
+    text-align: left;
+}

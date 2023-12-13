@@ -1,0 +1,119 @@
+.aboutus .outer-container{
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 100px;
+}
+
+.aboutus .outer-container .box{
+    width: 100%;
+    /* border: 1px solid rgb(214, 20, 20); */
+    padding: 10px;
+    margin: 10px;
+
+}
+
+.aboutus .outer-container .box1{
+    text-align: left;
+    justify-content: flex-start;
+    display: flex;
+}
+
+.aboutus .outer-container .box .upper{
+    width: 70%;
+    /* border: 1px solid black; */
+    display: flex;
+    gap: 20px;
+}
+
+.aboutus .outer-container .box .upper .upper-write{
+    margin: 0 auto;
+    padding: 20px;
+    /* border: 1px solid black; */
+    width: 50%;
+    background-color: #0c2943;
+    color: white;
+    border-radius: 30px;
+}
+
+.aboutus .outer-container .box .upper .upper-img{
+    margin: 0 auto;
+    /* border: 1px solid black; */
+    width: 50%;
+}
+
+.aboutus .outer-container .box .upper img{
+    width: 100%;
+    height: 180px;
+    border-radius: 30px;
+    object-fit: cover;
+}
+
+.aboutus .outer-container .box2{
+    text-align: left;
+    justify-content: flex-end;
+    display: flex;
+}
+
+.aboutus .outer-container .box .benefits{
+    width: 70%;
+    /* border: 1px solid black; */
+    display: flex;
+    gap: 20px;
+    height: 200px;
+    margin-top: 70px;
+}
+
+.aboutus .outer-container .box .benefits .benefit-write{
+    margin: 0 auto;
+    padding: 20px;
+    /* border: 1px solid black; */
+    width: 50%;
+    background-color:#0c2943 ;
+    color: white;
+    border-radius: 30px;
+}
+
+.aboutus .outer-container .box .benefits .benefit-img{
+    margin: 0 auto;
+    /* border: 1px solid black; */
+    width: 50%;
+}
+
+.aboutus .outer-container .box .benefits img{
+    width: 100%;
+    height: auto;
+    border-radius: 30px;
+    object-fit: cover;
+    height: 200px;
+}
+
+.aboutus .outer-container .box3{
+    display: flex;
+    /* border: 2px solid black; */
+    margin-top: 70px;
+}
+
+.aboutus .outer-container .box .inside-img{
+    width: 70%;
+    margin-top: 30px;
+    position: relative;
+}
+
+.aboutus .outer-container .box .inside-img .img img{
+    width: 100%;
+    border-radius: 30px;
+}
+
+.aboutus .outer-container .box .inside-img .content{
+    position: absolute;
+    color: white;
+    top: 40%;
+    padding: 0 10px;
+    text-align: center;
+
+}
+
+.aboutus .outer-container .box .inside-img .content p{
+    width: 60%;
+    margin: 0 auto;
+}

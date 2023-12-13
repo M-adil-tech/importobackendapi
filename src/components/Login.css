@@ -1,0 +1,84 @@
+.mainlogin{
+    margin-bottom: 5%;
+}
+
+.mainlogin .outerdiv{
+    margin: 0 auto;
+    max-width: 500px;
+    border: 1px solid #0c2943;
+    border-radius: 20px;
+    padding: 30px;
+    margin-top: 5%;
+    height: 550px;
+    text-align: center;
+    background-color: white;
+    box-shadow: 7px 7px 7px #0c2943;
+}
+
+
+.mainlogin .outerdiv .login .ep{
+    margin: 30px;
+}
+
+.mainlogin .outerdiv .login .ep input{
+    border: 1px solid #0c2943;
+    border-radius: 8px;
+    padding: 7px;
+    width: 80%
+}
+
+.mainlogin .outerdiv .login .buton{
+    margin: 0 auto;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+}
+
+.mainlogin .outerdiv .login .buton a{
+    width: 50%;
+
+}
+
+.mainlogin .outerdiv .login  button{
+    background-color:#0c2943;
+    color:white;
+    border: 1px solid  #0c2943;
+    border-radius: 25px;
+    width: 150px;
+    padding:5px ;
+    margin-top: 15px;
+}
+
+.mainlogin .outerdiv .login button:hover{
+    background-color:white;
+    color:#0c2943;
+    transition: ease-in-out .2s;
+    
+}
+
+
+.mainlogin .outerdiv .footer{
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 15%;
+}
+
+.mainlogin .outerdiv .footer .signbuton{
+    margin-top: 5%;
+}
+
+.mainlogin .outerdiv .footer .signbuton button{
+    background-color:#0c2943;
+    color:white;
+    border: 1px solid  #0c2943;
+    border-radius: 25px;
+    width: 30%;
+    padding:5px ;
+}
+
+.mainlogin .outerdiv .footer .signbuton button:hover{
+    background-color:white;
+    color:#0c2943;
+    transition: ease-in-out .2s;
+}
