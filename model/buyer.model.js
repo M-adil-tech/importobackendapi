@@ -5,9 +5,7 @@ const { Schema } = mongoose;
 
 const buyerSchema = new Schema({
     userId:{
-        type: Schema.Types.ObjectId,
-        ref: UserModel,
-        
+        type: String 
     },
    
     location: {
@@ -26,7 +24,7 @@ const buyerSchema = new Schema({
       },
       quantity: {
         type: Number,
-        //required: true,
+        required: true,
         min: 0
       },
     description: {

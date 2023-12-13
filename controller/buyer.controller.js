@@ -11,11 +11,17 @@ exports.createBid =  async (req,res,next)=>{
     }
 }
 
-exports.getBid =  async (req,res,next)=>{
+exports.getBid = async (req, res, next) => {
     try {
-        const { userId } = req.body;
-        let buyerData = await buyerService.getBid(userId);
-        res.json({status: true,success:buyerData});
+        if (req.body.userId) {
+            const { userId } = req.body;
+            let buyerData = await buyerService.getBid(userId);
+            res.json({ status: true, success: buyerData });
+        } else {
+            // If userId is not provided, fetch all data
+            let allBuyerData = await buyerService.getBid();
+            res.json({ status: true, success: allBuyerData });
+        }
     } catch (error) {
         console.log(error, 'err---->');
         next(error);
