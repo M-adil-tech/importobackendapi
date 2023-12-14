@@ -69,10 +69,7 @@ exports.getBidById = async (req, res, next) => {
 exports.acceptBidResponse = async (req, res, next) => {
     try {
         const { bidId } = req.body;
-        // Assuming you have validation logic for bidId and bid response acceptance
-        // ...
-
-        // Update the bid status to 'completed'
+       
         await buyerModel.findByIdAndUpdate(bidId, { status: 'completed' });
 
         res.json({ status: true, message: 'Bid response accepted successfully.' });
@@ -81,3 +78,12 @@ exports.acceptBidResponse = async (req, res, next) => {
         next(error);
     }
 };
+function scheduleDeleteExpiredBids() {
+    setInterval(async () => {
+        console.log("Running deleteExpiredBids...");
+        await buyerService.deleteExpiredBids();
+    }, 60 * 60 * 1000); 
+}
+
+
+scheduleDeleteExpiredBids();
