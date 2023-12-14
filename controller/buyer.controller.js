@@ -84,6 +84,6 @@ function scheduleDeleteExpiredBids() {
         await buyerService.deleteExpiredBids();
     }, 60 * 60 * 1000); 
 }
-
+//24 hours 
 
 scheduleDeleteExpiredBids();
